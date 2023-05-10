@@ -135,7 +135,7 @@ class _MakeIntroduceScreenState extends State<MakeIntroduceScreen> {
                     autofocus: false,
                     onChanged: (String value) {
                       userNickName = value;
-                      userNickNameLength = userNickName.length.toString();
+                      // userNickNameLength = userNickName.length.toString();
                     },
                     decoration: InputDecoration(
                       contentPadding: EdgeInsets.all(20),

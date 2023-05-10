@@ -20,9 +20,10 @@ class FrontProfileCardScreen extends StatelessWidget {
         child: Column(
           children: [
             Container(
+              padding: EdgeInsets.only(bottom: 10),
               width: 221,
               height: 42.0,
-              // alignment: Alignment.center,
+              alignment: Alignment.center,
               decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/images/bubble_speech.png'),
@@ -38,6 +39,9 @@ class FrontProfileCardScreen extends StatelessWidget {
                 ),
                 textAlign: TextAlign.center,
               ),
+            ),
+            const SizedBox(
+              height: 10,
             ),
             Stack(
               children: [
@@ -107,7 +111,7 @@ class FrontProfileCardScreen extends StatelessWidget {
               height: 12.0,
             ),
             Text(
-              '먼지이이잉',
+              '믹스인',
               style: TextStyle(
                 fontFamily: 'SUIT',
                 fontWeight: FontWeight.w600,
@@ -118,7 +122,7 @@ class FrontProfileCardScreen extends StatelessWidget {
               height: 8.0,
             ),
             Text(
-              '커뮤니케이션학과',
+              '자동화공학과',
               style: TextStyle(
                 fontFamily: 'SUIT',
                 fontWeight: FontWeight.w500,
@@ -136,7 +140,7 @@ class FrontProfileCardScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(32.0),
                 color: MIXIN_BLACK_5,
               ),
-              child: Text('물지않아요'),
+              child: Text('반갑습니다. 자동화공학과 23학번 주현우입니다.'),
             ),
           ],
         ),
